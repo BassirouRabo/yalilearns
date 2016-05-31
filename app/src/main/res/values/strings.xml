@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Yali Learns</string>
+    <string name="title_activity_civic_leadership">Civic Leadership</string>
+    <string name="title_activity_leadership">Leadership</string>
+    <string name="title_activity_business_entrepreneurship">Business Entrepreneurship</string>
+    <string name="title_activity_public_management">Public Management</string>
+    <string name="title_activity_civic_leadership_course1">Creating and Maintaining Social
+        Enterprises
+    </string>
+    <string name="title_activity_civic_leadership_course2">Community Organizing for Action</string>
+    <string name="title_activity_business_entrepreneurship_course1">Fundamentals of Starting and
+        Running a Business
+    </string>
+    <string name="title_activity_business_entrepreneurship_course2">Fundamentals of Business
+        Expansion
+    </string>
+    <string name="title_activity_leadership_course1">Management Strategies for People and
+        Resources
+    </string>
+    <string name="title_activity_leadership_course2">Course Strategies for Personal Growth and
+        Development
+    </string>
+    <string name="title_activity_leadership_course3">Workforce Collaboration and Development
+    </string>
+    <string name="title_activity_public_management_course1">Basics of Public - Private
+        Partnerships
+    </string>
+    <string name="title_activity_public_management_course2">Strengthening Public Sector Service
+    </string>
 </resources>

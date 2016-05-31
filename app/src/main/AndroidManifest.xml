@@ -15,6 +15,123 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CivicLeadership"
+            android:label="@string/title_activity_civic_leadership"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.Home" />
+        </activity>
+        <activity
+            android:name=".Leadership"
+            android:label="@string/title_activity_leadership"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.Home" />
+        </activity>
+        <activity
+            android:name=".BusinessEntrepreneurship"
+            android:label="@string/title_activity_business_entrepreneurship"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.Home" />
+        </activity>
+        <activity
+            android:name=".PublicManagement"
+            android:label="@string/title_activity_public_management"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.Home" />
+        </activity>
+        <activity
+            android:name=".CivicLeadershipCourse1"
+            android:label="@string/title_activity_civic_leadership_course1"
+            android:parentActivityName=".CivicLeadership"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.CivicLeadership" />
+        </activity>
+        <activity
+            android:name=".CivicLeadershipCourse2"
+            android:label="@string/title_activity_civic_leadership_course2"
+            android:parentActivityName=".CivicLeadership"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.CivicLeadership" />
+        </activity>
+        <activity
+            android:name=".BusinessEntrepreneurshipCourse1"
+            android:label="@string/title_activity_business_entrepreneurship_course1"
+            android:parentActivityName=".BusinessEntrepreneurship"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.BusinessEntrepreneurship" />
+        </activity>
+        <activity
+            android:name=".BusinessEntrepreneurshipCourse2"
+            android:label="@string/title_activity_business_entrepreneurship_course2"
+            android:parentActivityName=".BusinessEntrepreneurship"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.BusinessEntrepreneurship" />
+        </activity>
+        <activity
+            android:name=".LeadershipCourse1"
+            android:label="@string/title_activity_leadership_course1"
+            android:parentActivityName=".Leadership"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.Leadership" />
+        </activity>
+        <activity
+            android:name=".LeadershipCourse2"
+            android:label="@string/title_activity_leadership_course2"
+            android:parentActivityName=".Leadership"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.Leadership" />
+        </activity>
+        <activity
+            android:name=".LeadershipCourse3"
+            android:label="@string/title_activity_leadership_course3"
+            android:parentActivityName=".Leadership"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.Leadership" />
+        </activity>
+        <activity
+            android:name=".PublicManagementCourse1"
+            android:label="@string/title_activity_public_management_course1"
+            android:parentActivityName=".PublicManagement"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.PublicManagement" />
+        </activity>
+        <activity
+            android:name=".PublicManagementCourse2"
+            android:label="@string/title_activity_public_management_course2"
+            android:parentActivityName=".PublicManagement"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="yalilearns.apkode.net.yalilearns.PublicManagement" />
+        </activity>
     </application>
 
 </manifest>
