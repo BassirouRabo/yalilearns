@@ -6,26 +6,45 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="yalilearns.apkode.net.yalilearns.Leadership"
-    tools:showIn="@layout/activity_leadership"
-    android:orientation="vertical">
+    tools:showIn="@layout/activity_leadership">
 
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Course 1- Management Strategies for People and Resources"
-        android:onClick="startLeadershipCourse1"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Course 2 - Course Strategies for Personal Growth and Development"
-        android:onClick="startLeadershipCourse2"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Course 3- Workforce Collaboration and Development"
-        android:onClick="startLeadershipCourse3"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@mipmap/image" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLeadershipCourse1"
+                android:text="Course 1- Management Strategies for People and Resources" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLeadershipCourse2"
+                android:text="Course 2 - Course Strategies for Personal Growth and Development" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLeadershipCourse3"
+                android:text="Course 3- Workforce Collaboration and Development" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

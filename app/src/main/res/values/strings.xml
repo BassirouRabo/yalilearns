@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Yali Learns</string>
+
     <string name="title_activity_civic_leadership">Civic Leadership</string>
     <string name="title_activity_leadership">Leadership</string>
     <string name="title_activity_business_entrepreneurship">Business Entrepreneurship</string>
@@ -27,4 +28,10 @@
     </string>
     <string name="title_activity_public_management_course2">Strengthening Public Sector Service
     </string>
+    <string name="civic_leadership_course2Presentation">Grassroots campaigns and volunteers are essential to the success of most nongovernmental organizations involved in community development. Learn how to inspire and engage volunteers to be proactive in their communities and organize grassroots campaigns.</string>
+
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="actionbar_tutorial">This is a demo which shows how to use the ActionBar as an overlay when the video is playing in fullscreen. The actionbar will automatically fade away along with the player controls when the video is being played in fullscreen. While not in fullscreen the Actionbar is visible and does not overlay any of the views.</string>
+
+
 </resources>

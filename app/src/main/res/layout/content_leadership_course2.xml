@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="yalilearns.apkode.net.yalilearns.LeadershipCourse2"
     tools:showIn="@layout/activity_leadership_course2">
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@mipmap/image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Learn different ways you can develop your business, organization and personal skills." />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession1"
+                android:text="Lesson 1: Developing a Personal Code of Ethics" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession2"
+                android:text="Lesson 2: The Art of Public Speaking" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession3"
+                android:text="Lesson 3: Networking to Get Ahead" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="yalilearns.apkode.net.yalilearns.LeadershipCourse3"
     tools:showIn="@layout/activity_leadership_course3">
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@mipmap/image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Brush up on best practices in developing a collaborative work environment, including identifying key priorities, developing staff competencies and ensuring a diverse and effective workforce." />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession1"
+                android:text="Lesson 1: Setting and Achieving Goals" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession2"
+                android:text="Lesson 2: Designing and Delivering Training" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession3"
+                android:text="Lesson 3: Improving Your Network, Your Team and Your Organizational Structure" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

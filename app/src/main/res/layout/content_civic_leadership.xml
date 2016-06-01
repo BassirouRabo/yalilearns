@@ -6,20 +6,40 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="yalilearns.apkode.net.yalilearns.CivicLeadership"
-    tools:showIn="@layout/activity_civic_leadership"
-    android:orientation="vertical">
+    tools:showIn="@layout/activity_civic_leadership">
 
-       <Button
-           android:layout_width="match_parent"
-           android:layout_height="0dp"
-           android:layout_weight="1"
-           android:text="Course 1 - Creating and Maintaining Social Enterprises"
-           android:onClick="startCivicLeadershipCourse1"/>
-        <Button
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Course 2 - Community Organizing for Action"
-            android:onClick="startCivicLeadershipCourse2"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@mipmap/image" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startCivicLeadershipCourse1"
+                android:text="Course 1 - Creating and Maintaining Social Enterprises" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startCivicLeadershipCourse2"
+                android:text="Course 2 - Community Organizing for Action" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

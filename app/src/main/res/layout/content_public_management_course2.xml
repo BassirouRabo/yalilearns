@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="yalilearns.apkode.net.yalilearns.PublicManagementCourse2"
     tools:showIn="@layout/activity_public_management_course2">
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@mipmap/image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Becoming a strong and effective public servant is not easy. This course will discuss ways to uphold transparency and objectivity while being adept at communicating with the" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession1"
+                android:text="Lesson 1: Establishing Professional Ethics in Government" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession2"
+                android:text="Lesson 2: Becoming an Effective Public Servant" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startLession3"
+                android:text="Lesson 3: Communicating with the Public" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

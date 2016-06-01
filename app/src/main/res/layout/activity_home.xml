@@ -3,36 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="yalilearns.apkode.net.yalilearns.Home"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="yalilearns.apkode.net.yalilearns.Home">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:layout_marginTop="@dimen/button_margin"
         android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:onClick="startCivicLeadership"
         android:text="Civic Leadership"
-        android:onClick="startCivicLeadership"/>
+        android:textColor="@color/white" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/button_margin"
         android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:onClick="startLeadership"
         android:text="Leadership"
-        android:onClick="startLeadership"/>
+        android:textColor="@color/white" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/button_margin"
         android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:onClick="startBusinessEntrepreneurship"
         android:text="Business et Entrepreneurship"
-        android:onClick="startBusinessEntrepreneurship"/>
+        android:textColor="@color/white" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/button_margin"
         android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:onClick="startPublicManagement"
         android:text="Public Management"
-        android:onClick="startPublicManagement"/>
-
+        android:textColor="@color/white" />
 
 </LinearLayout>

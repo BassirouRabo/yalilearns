@@ -17,4 +17,26 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="button">
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_horizontal_margin</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="buttonLesson">
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin</item>
+        <item name="android:enabled">false</item>
+        <item name="android:background">@drawable/button_bg_stroke</item>
+    </style>
+
+    <style name="buttonCourse">
+        <item name="android:drawableRight">@drawable/ic_chevron_right_24dp</item>
+        <item name="android:background">@drawable/button_bg_stroke</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+    </style>
+
+
 </resources>

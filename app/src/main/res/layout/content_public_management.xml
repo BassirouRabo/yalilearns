@@ -6,20 +6,39 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="yalilearns.apkode.net.yalilearns.PublicManagement"
-    tools:showIn="@layout/activity_public_management"
-    android:orientation="vertical">
+    tools:showIn="@layout/activity_public_management">
 
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Course 1 - Basics of Public - Private Partners hips"
-        android:onClick="startPublicManagementCourse1"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Course 2 - Strengthening Public Sector Service"
-        android:onClick="startPublicManagementCourse2"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@mipmap/image" />
+
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startPublicManagementCourse1"
+                android:text="Course 1 - Basics of Public - Private Partners hips" />
+
+            <Button
+                style="@style/buttonCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startPublicManagementCourse2"
+                android:text="Course 2 - Strengthening Public Sector Service" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
