@@ -1,7 +1,9 @@
 package yalilearns.apkode.net.yalilearns;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -326,6 +328,11 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
     }
 
     private void setLesson() {
+        LinearLayout layoutPassExam = (LinearLayout)findViewById(R.id.layoutPassExam);
+        Button btnPassExam = (Button)findViewById(R.id.btnPassExam);
+
+
+
         switch (categorie) {
             // Civic Leadership Course 1
             case "Civic Leadership Course 1 Lesson 1":
@@ -363,6 +370,10 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson4.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(11);
+
+
                 break;
 
             // Civic Leadership Course 2
@@ -401,6 +412,8 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson4.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(12);
                 break;
 
             // Leadership Course 1
@@ -433,6 +446,8 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson3.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(21);
                 break;
 
             // Leadership Course 2
@@ -465,6 +480,8 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson3.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(22);
                 break;
 
             // Leadership Course 3
@@ -497,6 +514,8 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson3.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(23);
                 break;
 
 
@@ -536,6 +555,8 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson4.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(31);
                 break;
 
             // Business et Entrepreneurship Course 2
@@ -565,6 +586,8 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson3.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(32);
                 break;
 
             // Public Management Course 1
@@ -597,6 +620,8 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson3.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(41);
                 break;
 
 
@@ -630,8 +655,50 @@ public class Lesson extends YouTubeBaseActivity implements YouTubePlayer.OnIniti
 
                 btnLesson3.setTextColor(getResources().getColor(R.color.colorPrimary));
                 layoutLessonNextButton.setVisibility(View.GONE);
+                layoutPassExam.setVisibility(View.VISIBLE);
+                btnPassExam.setTag(42);
                 break;
         }
     }
 
+    public void startPassExam(View view) {
+        Integer tag = (Integer)view.getTag();
+        String lien = "";
+
+        switch (tag){
+            case 11 :
+            lien = "https://yali.state.gov/courses/quiz-social-ent";
+                break;
+            case 12:
+                lien = "https://yali.state.gov/courses/quiz-community-org";
+                break;
+            case 21 :
+                lien = "https://yali.state.gov/courses/quiz-management-strategies/";
+                break;
+            case 22 :
+                lien = "https://yali.state.gov/courses/quiz-personal-growth/";
+                break;
+            case 23 :
+                lien = "https://yali.state.gov/courses/quiz-workforce-collab/";
+                break;
+            case 31 :
+                lien = "https://yali.state.gov/courses/quiz-starting-biz/";
+                break;
+            case 32 :
+                lien = "https://yali.state.gov/courses/quiz-biz-expansion/";
+                break;
+            case 41 :
+                lien = "https://yali.state.gov/courses/quiz-public-private/";
+                break;
+            case 42 :
+                lien = "https://yali.state.gov/courses/quiz-pub-sec-service/";
+                break;
+
+        }
+
+        if(!lien.equals("")){
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(lien)));
+        }
+
+    }
 }

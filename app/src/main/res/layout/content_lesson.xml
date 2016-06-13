@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Lesson">
+    tools:context=".Lesson"
+    android:background="@color/transparent">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_player"
@@ -46,7 +47,7 @@
                 android:padding="@dimen/activity_horizontal_margin">
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end|center"
                     android:onClick="startNextLesson"
@@ -57,27 +58,48 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/layoutPassExam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btnPassExam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:onClick="startPassExam"
+                    android:text="Pass exam"
+                    android:textColor="@color/colorPrimary"
+                    android:tint="@color/colorPrimaryDark" />
+
+
+            </LinearLayout>
+
             <Button
                 android:id="@+id/btnLesson1"
-                style="@style/buttonLesson"
+                style="@style/buttonCourse2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/btnLesson2"
-                style="@style/buttonLesson"
+                style="@style/buttonCourse2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/btnLesson3"
-                style="@style/buttonLesson"
+                style="@style/buttonCourse2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/btnLesson4"
-                style="@style/buttonLesson"
+                style="@style/buttonCourse2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

@@ -33,10 +33,22 @@
     </style>
 
     <style name="buttonCourse">
-        <item name="android:drawableRight">@drawable/ic_chevron_right_24dp</item>
-        <item name="android:background">@drawable/button_bg_stroke</item>
-        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+       <item name="android:padding">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/mini</item>
+        <item name="android:layout_marginBottom">@dimen/mini</item>
+        <item name="android:background">@drawable/button2</item>
     </style>
 
+    <style name="buttonCourse2">
+        <item name="android:padding">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/mini</item>
+        <item name="android:layout_marginBottom">@dimen/mini</item>
+        <item name="android:background">@drawable/button2</item>
+    </style>
 
+    <dimen name="mini">4dp</dimen>
 </resources>
