@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/transparent"
     android:orientation="vertical"
-    tools:context="yalilearns.apkode.net.yalilearns.Home"
-    android:background="@color/transparent">
+    tools:context="yalilearns.apkode.net.yalilearns.Home">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,39 +15,39 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <Button
-                android:padding="@dimen/activity_horizontal_margin"
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:background="@drawable/button1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button1"
                 android:onClick="startCivicLeadership"
-                android:textColor="@android:color/white"
-                android:text="Civic Leadershop"/>
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Civic Leadership"
+                android:textColor="@android:color/white" />
 
             <Button
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:background="@drawable/button1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button1"
                 android:onClick="startLeadership"
                 android:text="Leadership"
                 android:textColor="@android:color/white" />
 
 
             <Button
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:background="@drawable/button1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button1"
                 android:onClick="startBusinessEntrepreneurship"
                 android:text="Business Entrepreneurship"
                 android:textColor="@android:color/white" />
 
             <Button
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:background="@drawable/button1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button1"
                 android:onClick="startPublicManagement"
                 android:text="Public Management"
                 android:textColor="@android:color/white" />
